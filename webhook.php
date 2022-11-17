@@ -313,7 +313,7 @@
 	$to = $inputdata->to;
 	$msg_body = strtolower($inputdata->msg_body);
 	
-	$to = (isset($inputdata->to) ? $inputdata->to : '917363807606');
+	$to = (isset($inputdata->to) ? $inputdata->to : '919831367857');
 	$msg_body = (isset($inputdata->msg_body) ? $inputdata->msg_body : '');
 
 	$instance = new WhatsApp();
