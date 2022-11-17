@@ -302,15 +302,15 @@ class WhatsApp
 	}
 }
 
+
+	// THIS IS CALLED FOR GENERATING THE TOKEN.
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	// Takes raw data from the request
 $json = file_get_contents('php://input');
 
 	// // Converts it into a PHP object
 $inputdata = json_decode($json);
-
-	// THIS IS CALLED FOR GENERATING THE TOKEN.
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-
+	
 	$verify_token = "whatsapp";
 	$mode = $_GET["hub.mode"];
 	$token = $_GET["hub.verify_token"];
